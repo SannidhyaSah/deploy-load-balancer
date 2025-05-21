@@ -5,10 +5,10 @@ nixPkgs = ["nodejs_18", "yarn"]
 cmds = ["yarn install"]
 
 [phases.build]
-cmds = ["yarn build"]
+cmds = ["yarn yarn:build"]
 
 [start]
-cmd = "yarn start"
+cmd = "yarn yarn:start"
 
 [build.environment]
 NODE_ENV = "production"
